@@ -24,7 +24,7 @@ Be sure to have activated the plugin in your Plugin Settings.
 
 == Installation ==
 
-Drop the minibul-for-wordpress folder (or only the .php file) into /wp-content/plugins/ and activate the plug in the Wordpress admin area. Get the Minibul ID (this is a number which you can find on the Follow & Share page) en install it.
+Drop the minibul-channels-for-wordpress folder (or only the .php file) into /wp-content/plugins/ and activate the plug in the Wordpress admin area. Get the Channel ID (this is a number which you can find on the Follow & Share page) and Channeltype (either 'cm' or 'cx') and install it.
 
 == Credits ==
 
