@@ -2,7 +2,7 @@
 
 /*
 Plugin Name: Minibul Channel for WordPress Widget
-Version: 1.0
+Version: 1.1
 Plugin URI: http://www.minibul.com/
 Description: Display the latest update from any public Minibul Channel hosted at any Minibul Community.
 Author: Minibul.com
@@ -40,7 +40,12 @@ $minibulchannel_options['prefix'] = 'minibulchannel';
 // Display Minibul Channel Widget
 function minibulchannel_show($minibulchannelid,$channeltype) {
 	global $minibulchannel_options;
-	print '<div style="text-align:center;"><object width="155" height="160"><param name="wmode" value="transparent"></param><param name="channelid" value="'.$minibulchannelid.'"></param><param name="channeltype" value="'.$channeltype.'"></param><param name="movie" value="http://social.minibul.net/gadgets/swf/minibul_gadget2.swf"></param><param name="allowFullScreen" value="false"></param><param name="FlashVars" value="channelid='.$minibulchannelid.'&channeltype='.$channeltype.'"></param><param name="allowscriptaccess" value="never"></param><embed src="http://social.minibul.net/gadgets/swf/minibul_gadget2.swf" type="application/x-shockwave-flash" FlashVars="channelid='.$minibulchannelid.'&channeltype='.$channeltype.'" allowscriptaccess="never" allowfullscreen="false" width="155" height="160" wmode="transparent" ></embed></object></div>';
+print '
+<script type="text/javascript"><!-- //Minibul Gadget by minibul.com
+var channelid = "'.$minibulchannelid.'";
+var channeltype = "'.$channeltype.'";
+//--></script>
+<script src="http://broadcast.minibul.net/gadgets/bloggadgets/minibul_gadget2.js"></script>';
 }
 
 // Minibul Channel widget stuff
