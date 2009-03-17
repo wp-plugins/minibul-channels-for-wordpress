@@ -42,8 +42,8 @@ function minibulchannel_show($minibulchannelid,$channeltype) {
 	global $minibulchannel_options;
 print '
 <script type="text/javascript"><!-- //Minibul Gadget by minibul.com
-var channelid = "'.$minibulchannelid.'";
-var channeltype = "'.$channeltype.'";
+var mnblch_channelid = "'.$minibulchannelid.'";
+var mnblch_channeltype = "'.$channeltype.'";
 //--></script>
 <script src="http://broadcast.minibul.net/gadgets/bloggadgets/minibul_gadget2.js"></script>';
 }
