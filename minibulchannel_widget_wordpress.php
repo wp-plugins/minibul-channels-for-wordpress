@@ -45,7 +45,7 @@ print '
 var mnblch_channelid = "'.$minibulchannelid.'";
 var mnblch_channeltype = "'.$channeltype.'";
 //--></script>
-<script src="http://broadcast.minibul.net/gadgets/bloggadgets/bloggadget1_minibulchannel.js"></script>';
+<script type="text/javascript" src="http://broadcast.minibul.net/gadgets/bloggadgets/bloggadget1_minibulchannel.js"></script>';
 }
 
 // Minibul Channel widget stuff
